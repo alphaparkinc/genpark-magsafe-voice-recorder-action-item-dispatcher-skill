@@ -1,0 +1,35 @@
+{
+  "name": "genpark-magsafe-voice-recorder-action-item-dispatcher-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Hardware voice recorder audio processor, note summarizer & automated action item dispatcher.",
+  "author": "genpark",
+  "category": "productivity",
+  "tags": [
+    "voice-recorder",
+    "audio-processor",
+    "action-item-dispatcher",
+    "magsafe-ai",
+    "ph-august11"
+  ],
+  "inputs": {
+    "audio_file_path": {
+      "type": "string"
+    },
+    "dispatch_integrations": {
+      "type": "array"
+    }
+  },
+  "outputs": {
+    "processed_notes_markdown": {
+      "type": "string"
+    },
+    "dispatched_actions_count": {
+      "type": "integer"
+    },
+    "summary": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
